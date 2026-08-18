@@ -1,0 +1,7 @@
+User-agent: *
+
+Allow: /
+
+
+Sitemap:
+https://asem-alzaidani.com/sitemap.xml

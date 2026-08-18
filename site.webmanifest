@@ -1,0 +1,16 @@
+{
+"name":"Dr. Asem Al-Zaidani",
+"short_name":"Asem",
+"description":"General Practitioner | Primary Care | Urgent Care",
+"start_url":"/",
+"display":"standalone",
+"background_color":"#f5f8fc",
+"theme_color":"#007fa8",
+"icons":[
+{
+"src":"favicon.png",
+"sizes":"128x128",
+"type":"image/png"
+}
+]
+}

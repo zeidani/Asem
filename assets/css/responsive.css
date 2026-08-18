@@ -1,0 +1,837 @@
+/* =====================================
+   RESPONSIVE DESIGN
+===================================== */
+
+
+/* Large Screens */
+
+@media (max-width: 1200px) {
+
+
+    .hero-grid {
+
+        grid-template-columns:1fr 380px;
+
+        gap:50px;
+
+    }
+
+
+
+    .hero-content h1 {
+
+        font-size:60px;
+
+    }
+
+
+
+    .skills-grid {
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+
+
+    .services-grid {
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+
+
+    .stats-grid {
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+
+
+}
+
+/* Mobile navigation — compact drawer, never overlaps the profile */
+@media (max-width: 992px){
+  .header .nav{
+    position:fixed!important; top:76px!important; right:16px!important; left:16px!important;
+    width:auto!important; height:auto!important; max-height:calc(100vh - 100px)!important;
+    display:none!important; flex-direction:column!important; gap:0!important;
+    padding:10px!important; border:1px solid var(--border-color)!important;
+    border-radius:18px!important; background:rgba(7,17,31,.98)!important;
+    box-shadow:0 24px 60px rgba(0,0,0,.42)!important; overflow:auto!important;
+    z-index:10000!important;
+  }
+  .header .nav.active{display:flex!important}
+  .header .nav a{display:block!important;width:100%!important;padding:12px 14px!important;border-radius:10px!important}
+  .header .nav a:hover,.header .nav a.active{background:rgba(0,180,216,.12)!important}
+  .header .nav a::after{display:none!important}
+}
+
+
+
+
+
+
+
+
+
+/* Tablets */
+
+@media (max-width: 992px) {
+
+
+
+    section {
+
+        padding:80px 0;
+
+    }
+
+
+
+
+    /* Header */
+
+
+    .nav {
+
+
+        position:fixed;
+
+        top:80px;
+
+        left:0;
+
+        width:100%;
+
+        background:#07111f;
+
+        flex-direction:column;
+
+        align-items:center;
+
+        padding:30px 0;
+
+        gap:25px;
+
+
+        transform:translateY(-120%);
+
+        transition:.4s ease;
+
+
+        border-bottom:1px solid var(--border-color);
+
+
+    }
+
+
+
+
+    .nav.active {
+
+
+        transform:translateY(0);
+
+
+    }
+
+
+
+
+
+    .menu-toggle {
+
+
+        display:block;
+
+
+    }
+
+
+
+
+
+
+
+    /* Hero */
+
+
+    .hero-grid {
+
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+
+
+    }
+
+
+
+
+    .hero-content p {
+
+
+        margin-left:auto;
+
+        margin-right:auto;
+
+
+    }
+
+
+
+
+
+    .hero-buttons {
+
+
+        justify-content:center;
+
+
+    }
+
+
+
+
+
+    .hero-image {
+
+
+        order:-1;
+
+
+    }
+
+
+
+
+    .hero-image img {
+
+
+        width:300px;
+
+        height:300px;
+
+        margin:auto;
+
+
+    }
+
+
+
+
+
+    .hero-content h1 {
+
+
+        font-size:52px;
+
+
+    }
+
+
+
+
+
+
+
+
+
+    /* About */
+
+
+    .about-grid {
+
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+
+
+    }
+
+
+
+
+    .about-image img {
+
+
+        margin:auto;
+
+
+    }
+
+
+
+
+    .about-info {
+
+
+        grid-template-columns:1fr;
+
+
+    }
+
+
+
+
+
+
+    /* Portfolio */
+
+
+    .portfolio-grid {
+
+
+        grid-template-columns:1fr;
+
+
+    }
+
+
+
+
+    .project-preview {
+
+
+        grid-template-columns:1fr;
+
+
+    }
+
+
+
+
+
+
+
+    /* Contact */
+
+
+    .contact-grid {
+
+
+        grid-template-columns:1fr;
+
+
+    }
+
+
+
+}
+
+/* =====================================
+   MOBILE DEVICES
+===================================== */
+
+
+@media (max-width: 600px) {
+
+
+
+    .container {
+
+        width:92%;
+
+    }
+
+
+
+
+
+
+    section {
+
+        padding:60px 0;
+
+    }
+
+
+
+
+
+
+    /* Header */
+
+
+    .header .container {
+
+
+        height:70px;
+
+
+    }
+
+
+
+    .logo {
+
+
+        font-size:26px;
+
+
+    }
+
+
+
+
+
+
+
+    /* Page Header */
+
+
+    .page-header {
+
+
+        padding-top:120px;
+
+        padding-bottom:50px;
+
+
+    }
+
+
+
+    .page-header h1 {
+
+
+        font-size:38px;
+
+
+    }
+
+
+
+    .page-header p {
+
+
+        font-size:16px;
+
+
+    }
+
+
+
+
+
+
+
+
+
+    /* Hero */
+
+
+    .hero {
+
+
+        min-height:auto;
+
+        padding-top:120px;
+
+
+    }
+
+
+
+    .hero-content h1 {
+
+
+        font-size:40px;
+
+        letter-spacing:-1px;
+
+
+    }
+
+
+
+    .hero-content h2 {
+
+
+        font-size:22px;
+
+
+    }
+
+
+
+    .hero-content p {
+
+
+        font-size:16px;
+
+
+    }
+
+
+
+    .hero-buttons {
+
+
+        flex-direction:column;
+
+        width:100%;
+
+
+    }
+
+
+
+    .hero-buttons .btn {
+
+
+        width:100%;
+
+
+    }
+
+
+
+
+
+
+    .hero-image img {
+
+
+        width:240px;
+
+        height:240px;
+
+
+    }
+
+
+
+
+
+
+
+
+
+    /* Statistics */
+
+
+    .stats-grid {
+
+
+        grid-template-columns:1fr;
+
+
+    }
+
+
+
+
+    .stat-card h2 {
+
+
+        font-size:36px;
+
+
+    }
+
+
+
+
+
+
+
+
+
+    /* Skills */
+
+
+    .skills-grid {
+
+
+        grid-template-columns:1fr;
+
+
+    }
+
+
+
+
+
+
+
+    /* Services */
+
+
+    .services-grid {
+
+
+        grid-template-columns:1fr;
+
+
+    }
+
+
+
+
+
+
+
+    /* Portfolio */
+
+
+    .project-image {
+
+
+        height:220px;
+
+
+    }
+
+
+
+
+    .project-content {
+
+
+        padding:22px;
+
+
+    }
+
+
+
+
+    .project-content h2 {
+
+
+        font-size:24px;
+
+
+    }
+
+
+
+
+
+
+
+
+
+    /* Contact */
+
+
+    .contact-actions {
+
+
+        flex-direction:column;
+
+
+    }
+
+
+
+
+    .contact-actions .btn {
+
+
+        width:100%;
+
+
+    }
+
+
+
+    .contact-form {
+
+
+        padding:25px;
+
+
+    }
+
+
+
+
+
+
+
+
+    /* Timeline Mobile */
+
+
+    .timeline::before {
+
+
+        left:15px;
+
+
+    }
+
+
+
+
+
+    .timeline-item,
+    .timeline-item:nth-child(even),
+    .timeline-item:nth-child(odd) {
+
+
+        width:100%;
+
+        left:0;
+
+        padding-left:45px;
+
+        padding-right:0;
+
+        text-align:left;
+
+
+    }
+
+
+
+    .timeline-content {
+
+
+        padding:22px;
+
+
+    }
+
+
+
+
+
+
+
+
+    /* Certifications */
+
+
+    .certifications-grid {
+
+
+        grid-template-columns:1fr;
+
+
+    }
+
+
+
+
+
+
+
+
+    /* Buttons */
+
+
+    .btn {
+
+
+        padding:13px 25px;
+
+
+    }
+
+
+
+
+
+
+    /* Titles */
+
+
+    .section-title {
+
+
+        font-size:32px;
+
+
+    }
+
+
+
+
+    .cta-section h2 {
+
+
+        font-size:32px;
+
+
+    }
+
+
+
+}
+
+/* ==============================
+   HERO / LOGO REFINEMENT
+============================== */
+
+@media (max-width: 992px){
+    .hero-grid{
+        top:-22px;
+    }
+
+    .logo-name{
+        font-size:27px;
+    }
+
+    .logo-mark{
+        width:38px;
+        height:38px;
+    }
+}
+
+@media (max-width: 600px){
+    .hero{
+        padding-top:105px;
+    }
+
+    .hero-grid{
+        top:-10px;
+    }
+
+    .hero-intro-text{
+        animation-duration:1.05s;
+    }
+
+    .hero-intro-image{
+        animation-duration:1.15s;
+    }
+
+    .logo-name{
+        font-size:23px;
+    }
+
+    .logo-mark{
+        width:35px;
+        height:35px;
+        border-radius:10px;
+        font-size:12px;
+    }
+
+    .shape.s2,
+    .shape.s6{
+        display:none;
+    }
+
+    .shape.s1{width:45px;height:45px;}
+    .shape.s3{width:35px;height:35px;}
+    .shape.s4{width:55px;height:55px;}
+    .shape.s5{width:32px;height:32px;}
+
+    .stat-card h2{
+        font-size:38px;
+    }
+}
+
+@media (max-width: 992px){
+  .header .nav{position:fixed!important;top:76px!important;right:16px!important;left:16px!important;width:auto!important;height:auto!important;max-height:calc(100vh - 100px)!important;display:none!important;flex-direction:column!important;gap:0!important;padding:10px!important;border:1px solid var(--border-color)!important;border-radius:18px!important;background:rgba(7,17,31,.98)!important;box-shadow:0 24px 60px rgba(0,0,0,.42)!important;overflow:auto!important;z-index:10000!important}
+  .header .nav.active{display:flex!important}
+  .header .nav a{display:block!important;width:100%!important;padding:12px 14px!important;border-radius:10px!important}
+  .header .nav a::after{display:none!important}
+}
